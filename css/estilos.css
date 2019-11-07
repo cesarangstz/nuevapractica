@@ -16,14 +16,31 @@ ul li{
     float:left;
     text-align:center;
 }
-ul li a{
+ul li a, ul li div{
     display:block;
     padding:5px 10px;
     margin:0px;
     color:white;
     font-weight:bold;
     text-decoration:none;
+    position:relative;
 }
-ul li a:hover{
+ul li a:hover, ul li div:hover{
     background-color:red;
+}
+ul ul{
+    display:none;
+}
+ul ul li{
+    clear: both;
+    display:block;
+    width:100%;
+}
+ul div:hover ul{
+    display:block;
+    position:absolute;
+    width:100%;
+    background-color:gray;
+    color:white;
+    left:0px;
 }
